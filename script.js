@@ -13,10 +13,18 @@ function toggleMode() {
     img.setAttribute("src", "./assets/avatar.png")
   }
 
-  //Para o incrível eu do futuro
   //Mudar a descrição da imagem
-
-  //Se tiver light mode
-
-  //Se tiver sem light mode manter a descrição normal
+  if (html.classList.contains("light")) {
+    //Se tiver light mode
+    img.setAttribute(
+      "alt",
+      "Palhaço de cabelo preto, chapeu e gola laranja e maquiagem azul nos olhos e vermelha na boca sorrindo, desenhado por Tiago Orelha"
+    )
+  } else {
+    //Se tiver sem light mode manter a descrição normal
+    img.setAttribute(
+      "alt",
+      "Palhaço de cabelo preto, chapeu e gola laranja e maquiagem azul nos olhos e vermelha na boca triste, desenhado por Tiago Orelha"
+    )
+  }
 }
